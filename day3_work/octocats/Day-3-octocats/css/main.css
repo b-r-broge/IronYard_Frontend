@@ -1,0 +1,64 @@
+* {
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*li {
+  display: none;
+}*/
+
+.octodex {
+}
+
+.octocat {
+  display: inline-block;
+  max-height: 410px;
+  max-width: 360px;
+  margin: 15px 15px 15px 15px;
+  float: left;
+}
+
+.octocat img {
+  max-width: 360px;
+  max-height: 360px;
+  border-width: thin;
+  border-style: solid;
+  border-color: lightgrey;
+}
+
+.image-footer {
+  max-width: 360px;
+  max-height: 50px;
+}
+
+.image-number .image-caption .authors {
+  display: inline;
+}
+
+.image-number {
+  color: lightgrey;
+  font-weight: 900;
+}
+
+.image-number:before {
+  content: "#"
+}
+
+.image-caption {
+  text-align: right
+  color: lightgrey;
+  font-weight: 900;
+}
+
+.image-caption a {
+  color: black;
+  text-decoration: none;
+}
+.authors {
+  list-style-type: none;
+}
+.authors img {
+  float: right;
+  max-width: 30px;
+  max-height: 30px;
+}

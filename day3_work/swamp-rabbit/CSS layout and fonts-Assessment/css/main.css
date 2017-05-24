@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Oleo script";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oleo Script'), url(http://fonts.gstatic.com/s/oleoscript/v5/_weQNDK6Uf40CiGFKBBUjogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "Poiret One";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), url(http://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8QzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+}
+
+* {
+  margin: 0;
+}
+
+.site-header {
+  height: 520px;
+  width: 1280px;
+  background: url("../img/header-background.jpg") 0px -100px no-repeat ;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.site-header h1 {
+  padding-top: 110px;
+  padding-bottom: 30px;
+  font-family: "Poiret One";
+  font-size: 70px;
+  text-shadow: 1px 1px 6px #000;
+}
+
+.divider {
+  margin: 25px auto 25px auto;
+  height: 2px;
+  width: 620px;
+  background-color: white;
+}
+
+.site-header h2 {
+  padding-top: 15px;
+  font-family: "Oleo script";
+  text-shadow: 1px 1px 2px #000;
+}
+
+.logo {
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  filter: invert(100%);
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  top: 100px;
+  left: 930px;
+}
+
+.site-imgs {
+  display: block;
+  height: 375px;
+}
+
+#left-img {
+  display: inline-block;
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 25px 10px 25px 140px;
+  background: url("../img/left-img.jpg") no-repeat center center;
+  background-size: cover;
+  box-shadow: 0px 2px 10px;
+}
+
+#middle-img {
+  display: inline-block;
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 25px 10px 25px 10px;
+  background: url("../img/middle-img.jpg") no-repeat center center;
+  background-size: cover;
+  box-shadow: 0px 2px 10px;
+}
+
+#right-img {
+  display: inline-block;
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 25px 10px 25px 10px;
+  background: url("../img/right-img.jpg") no-repeat center center;
+  background-size: cover;
+  box-shadow: 0px 2px 10px;
+}
+
+.callout-wrapper {
+  color: white;
+  height: 200px;
+  width: 1280px;
+  background-color: #47986b;
+  display: block;
+}
+
+.primary-text {
+  height: 200px;
+  width: 820px;
+  margin: 0px auto;
+  padding-top: 30px;
+  color: white;
+  font-family: "Poiret One";
+  font-size: 36px;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px #000;
+  text-align: center;
+}
+
+.contact-wrapper {
+  height: 250px;
+  font-family: "Poiret One";
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+  font-stretch: expanded;
+  padding-top: 30px;
+}
+
+.contact-msg {
+  width: 800px;
+  margin: 0px auto;
+}
+
+.contact-phone {
+  padding: 30px 0px 30px 0px;
+}
+.contact-email i {
+  color: black;
+  padding: 0px 0px 30px 0px;
+  zoom: 2;
+}
+
+.footer-wrapper {
+  height: 80px;
+  width: 1280px;
+  background-color: #262626;
+  color: white;
+  line-height: 80px;
+  text-align: center;
+  font-weight: 900;
+}
