@@ -1,0 +1,18 @@
+.container {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.item {
+  background-color: blue;
+}
+
+#spec {
+  flex-grow: 2;
+}
+
+#loner {
+  flex-shrink: 1;
+}

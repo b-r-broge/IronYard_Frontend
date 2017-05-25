@@ -1,0 +1,153 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.nav-row {
+  height: 80px;
+  width: 1280px;
+  background-color: #2E2D2B;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.nav-item i {
+  zoom: 200%;
+}
+
+.page-header {
+  height: 680px;
+  width: 1280px;
+  background: url("../img/header-img.jpg") center/cover no-repeat;
+  padding: -80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-family: "Josefin Sans";
+  font-size: 150px;
+  color: #2E2D2B;
+  margin-bottom: -55px;
+}
+
+.header-content h3 {
+  font-family: "Dancing Script";
+  font-size: 80px;
+  color: white;
+  text-shadow: 1px 2px 4px #000;
+}
+
+main {
+  width: 1150px;
+  background-color: #FEF9EC;
+  margin: -80px 65px;
+  padding: 50px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+aside {
+  height: 1175px;
+  width: 350px;
+}
+
+.blog-row {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.item {
+/*  height: 420px;*/
+  width: 540px;
+  background-color: white;
+  box-shadow: 2px 2px 6px #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  line-height: 2;
+}
+
+.meta {
+  margin: auto;
+  padding: -20px;
+  height: 15px;
+  width: 90%;
+  box-shadow: 0px 3px 4px -3px; #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-transform: uppercase;
+  font-family: 'josefin sans';
+  font-size: .75em;
+  font-weight: 600;
+  position: relative;
+  z-index: 3;
+}
+.icon-wrapper {
+  height:20px;
+}
+.icon-wrapper i {
+  margin-bottom: -10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  background-color: #EFEADF;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+  border-radius: 25px;
+  position: relative;
+  top: 10px;
+  left: 240px;
+  z-index: 5;
+}
+
+.item h4 {
+  font-family: 'josefin sans';
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-top: 40px;
+}
+
+#dino {
+  height: 250px;
+  width: 250px;
+  background: url('../img/dino.jpg') center/cover no-repeat;
+  float: right;
+}
+
+#xx {
+  height: 250px;
+  width: 250px;
+  background: url('../img/xx.png') center/cover no-repeat;
+  float: right;
+}
