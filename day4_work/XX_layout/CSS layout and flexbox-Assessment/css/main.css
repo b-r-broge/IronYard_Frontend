@@ -38,10 +38,10 @@
 }
 
 .page-header {
-  height: 680px;
+  height: 640px;
   width: 1280px;
   background: url("../img/header-img.jpg") center/cover no-repeat;
-  padding: -80px 0;
+  padding: -40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,21 +65,49 @@
 main {
   width: 1150px;
   background-color: #FEF9EC;
-  margin: -80px 65px;
+  margin: -80px auto 80px auto;
   padding: 50px 50px;
   display: flex;
-  justify-content: space-around;
+  box-shadow: 0px 2px 4px -1px #000;
 }
 
 aside {
   height: 1175px;
   width: 350px;
+  flex-grow: 1;
+  background-color: #EFEADF;
+  line-height: 2;
+  box-shadow: 0px 0px 3px 1px lightgrey;
+  padding: 35px;
+}
+
+.auth-pic {
+  height: 200px;
+  width: 200px;
+  background: url('../img/author.jpeg') center/cover no-repeat;
+  margin: auto;
+  border-radius: 100px;
+}
+
+.aside-heading {
+  font-family: 'josefin sans';
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  box-shadow: 0px 3px 0px 0px #000;
+  margin: 30px auto;
+  padding-bottom: 30px;
+}
+
+#bio {
+  margin-top: 40px;
 }
 
 .blog-row {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  flex-grow: 3;
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -95,9 +123,8 @@ aside {
 }
 
 .meta {
-  margin: auto;
-  padding: -20px;
-  height: 15px;
+  margin: -15px auto;
+  height: 30px;
   width: 90%;
   box-shadow: 0px 3px 4px -3px; #000;
   display: flex;
@@ -114,7 +141,7 @@ aside {
   height:20px;
 }
 .icon-wrapper i {
-  margin-bottom: -10px;
+  margin-bottom: -30px;
   height: 50px;
   width: 50px;
   display: flex;
@@ -134,8 +161,12 @@ aside {
 .item h4 {
   font-family: 'josefin sans';
   font-size: 1.5em;
-  font-weight: lighter;
+  font-weight: normal;
   margin-top: 40px;
+}
+
+.primary-txt {
+  font-size: 1.1em;
 }
 
 #dino {
@@ -150,4 +181,26 @@ aside {
   width: 250px;
   background: url('../img/xx.png') center/cover no-repeat;
   float: right;
+}
+
+#yhact-img {
+  height: 250px;
+  width: 250px;
+  background: url('../img/yhact.jpg') center/cover no-repeat;
+  float: right;
+}
+
+footer {
+  height: 30px;
+  width: 1280px;
+  background-color: #2E2D2B;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'josefin sans';
+  font-weight: 900;
+  font-size: .7em;
 }
