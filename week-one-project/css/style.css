@@ -1,0 +1,182 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: #F2F1E8;
+  font-family: 'lora';
+}
+
+nav {
+  height: 10vh;
+  background: #fff;
+  box-shadow: 0px 0px 2px 1px #AAA;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  height: 6vh;
+  width: 6vh;
+  margin-left: 1vw;
+  background: url("../images/bent-creek-logo.png") center/cover no-repeat;
+
+}
+
+.nav-row {
+  display: flex;
+  width: 30vw;
+  margin: 0px auto;
+  list-style-type: none;
+  text-align: center;
+  justify-content: space-between;
+  background: inherit;
+}
+.nav-item {
+  background: inherit;
+}
+
+.nav-item a {
+  background: inherit;
+  color: #2B2F26;
+  font-family: 'Roboto';
+  font-size: 2.5vh;
+  text-transform: uppercase;
+}
+
+.nav-item a:hover {
+  color: #CD5D67;
+}
+
+.cur-page a {
+  color: #968772;
+}
+
+.footer-content {
+  background: #2B2F26;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-txt {
+  background: inherit;
+  color: #FFF;
+  font-family: "lora";
+  font-weight: bold;
+  font-size: 3vh;
+  padding-left: 3vw;
+}
+
+.home-header {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-header h1 {
+  font-size: 11vh;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+.home-header h3 {
+  font-size: 6.5vh;
+  font-weight: 400;
+}
+
+.row1 {
+  height: 55vh;
+  margin: .5vh auto;
+  width: 96vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.row1-content {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2.5vh;
+}
+
+.row2 {
+  height: 35vh;
+  margin: .5vh auto;
+  margin-bottom: 3vh;
+  width: 96vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.row2-content {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2.5vh;
+}
+
+.img-txt {
+  background: #2B2F26;
+  color: #E3E9D4;
+  font-size: 3vh;
+  font-weight: bold;
+  padding: 1.25vh 1.25vw;
+}
+
+.endless-img {
+  background: url("../images/product-1.jpg") top/cover no-repeat;
+  flex: 3;
+}
+
+.sets-img {
+  background: url("../images/product-2.jpg") center/cover no-repeat;
+  flex: 1;
+}
+
+.texture-img {
+  background: url("../images/product-3.jpg") center/cover no-repeat;
+  flex: 1;
+}
+
+.tea-img {
+  background: url("../images/product-4.jpg") center/cover no-repeat;
+  flex: 1;
+}
+
+.jar-img {
+  background: url("../images/product-5.jpg") center/cover no-repeat;
+  flex: 1;
+}
+
+.saki-img {
+  background: url("../images/product-6.jpg") top/cover no-repeat;
+  flex: 2;
+}
+
+.sun-img {
+  background: url("../images/product-7.jpg") top/cover no-repeat;
+  flex: 1;
+}
+
+.endless-img, .sets-img, .texture-img, .tea-img, .jar-img, .saki-img, .sun-img {
+  /*padding: 1vh 1vw;*/
+  margin: .5vh .5vw;
+}
+
+article {
+  /*height: 100vh;*/
+}
