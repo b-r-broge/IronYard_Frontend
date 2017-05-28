@@ -9,10 +9,15 @@
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: #F2F1E8;
   font-family: 'lora';
+  background: transparent;
 }
 
+body {
+  background: #F2F1E8;
+}
+
+/*Common Nav bar*/
 nav {
   height: 10vh;
   background: #fff;
@@ -20,7 +25,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -61,6 +68,7 @@ nav {
   color: #968772;
 }
 
+/*Common Footer styling*/
 .footer-content {
   background: #2B2F26;
   height: 13vh;
@@ -78,6 +86,7 @@ nav {
   padding-left: 3vw;
 }
 
+/*Home page styling */
 .home-header {
   height: 30vh;
   display: flex;
@@ -85,6 +94,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 10vh;
 }
 
 .home-header h1 {
@@ -98,6 +108,7 @@ nav {
   font-weight: 400;
 }
 
+/*Picture row 1*/
 .row1 {
   height: 55vh;
   margin: .5vh auto;
@@ -113,6 +124,7 @@ nav {
   padding-bottom: 2.5vh;
 }
 
+/*Picture row 2*/
 .row2 {
   height: 35vh;
   margin: .5vh auto;
@@ -129,6 +141,7 @@ nav {
   padding-bottom: 2.5vh;
 }
 
+/*Common image and text formatting*/
 .img-txt {
   background: #2B2F26;
   color: #E3E9D4;
@@ -173,10 +186,118 @@ nav {
 }
 
 .endless-img, .sets-img, .texture-img, .tea-img, .jar-img, .saki-img, .sun-img {
-  /*padding: 1vh 1vw;*/
   margin: .5vh .5vw;
 }
 
-article {
-  /*height: 100vh;*/
+/* Starting the About page specific styling */
+.about-header {
+  font-size: 10vh;
+  text-align: center;
+  font-weight: 400;
+  margin: 9vh auto;
+  margin-top: 20vh;
+}
+
+.birdhouse {
+  height: 20vh;
+  width: 12vw;
+  background: url("../images/birdhouse.jpg") center/cover no-repeat;
+  float: left;
+  margin-left: 15vw;
+  margin-right: 2.5vw;
+}
+
+.main-txt, .founder-quote {
+  font-size: 3vh;
+  line-height: 6vh;
+  margin: 3vh 15vw;
+  font-weight: 550;
+  /*padding: 2.5vh 2.5vw;*/
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 2.5vh;
+  padding: 0vh 3vw;
+  border-left: 3px;
+  box-shadow: -3px 0px 0px -1px #968772;
+}
+
+.main-content h4 {
+  font-size: 4.5vh;
+  font-weight: 300;
+  margin: 2vh 15vw;
+  color: #131511;
+}
+
+.main-txt a {
+  color: #968772;
+}
+
+.main-txt a:hover {
+  color: #967343;
+}
+
+.room-img {
+  height: 50vh;
+  background: url("../images/background-3.jpg") 0 -15vh/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh 0;
+}
+
+.grow-txt {
+  background: transparent;
+  font-size: 10vh;
+  color: #F2F1E8;
+}
+
+.facilities-txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.facilities-txt p {
+  margin-right: 0;
+}
+
+.side-note {
+  margin-right: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 2vh;
+  line-height: 3.5vh;
+}
+
+.storage-img {
+  height: 20vh;
+  width: 15vw;
+  background: url("../images/background-1.jpg") top/cover no-repeat;
+  margin-bottom: 2vh;
+}
+
+/* Table configuration */
+
+.plan-table {
+  font-size: 3vh;
+  line-height: 7vh;
+  font-weight: 500;
+  margin-left: 15vw;
+  margin-bottom: 5vh;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background: #F2EADC;
+}
+
+tr:hover {
+  background: #CD5D67;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 1.5vh 1.5vw;
 }
