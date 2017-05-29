@@ -301,3 +301,69 @@ th, td {
   border: 1px solid #000;
   padding: 1.5vh 1.5vw;
 }
+
+/*Starting Newsletter specific styling*/
+.newsletter-back {
+  height: 90vh;
+  width: 100%;
+  background: url("../images/background-2.jpg") top/cover no-repeat;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  height: 65vh;
+  width: 50vw;
+  background: #FFF;
+  margin-bottom: 10vh;
+  padding: 2.5vh 3vw;
+}
+
+.formheading {
+  text-align: center;
+  font-size: 4.5vh;
+  margin: 3vh 2vw;
+  font-weight: 400;
+}
+
+.formsubhead {
+  text-align: center;
+  font-size: 3.1vh;
+  font-weight: normal;
+  margin: 3vh auto;
+}
+
+fieldset {
+  line-height: 6vh;
+  font-size: 3vh;
+  width: 100%;
+  margin: 6vh auto;
+  color: #BDB0A2;
+}
+
+input ~ div {
+  border-bottom: 2px solid #968772;
+}
+
+input:focus ~ div{
+  border-bottom: 2px solid #967343;
+}
+
+input[type="submit"] {
+  height: 8.5vh;
+  width: 10vw;
+  background: #968772;
+  color: #F2F1E8;
+  margin: 3vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  background: #967343;
+  color: #FFFFFF;
+}
