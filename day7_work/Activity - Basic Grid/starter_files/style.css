@@ -1,0 +1,101 @@
+/*
+    BACKGROUND COLORS
+
+    mobile  : #bff
+    tablet  : #fcf
+    desktop : #ff9
+
+    BREAKPOINTS
+
+    tablet  : 700px
+    desktop : 1000px
+*/
+
+/*** Default Mobile Styles ****************************/
+body{
+  font-family: Lucida Sans Typewriter, Lucida Console, monaco, monospace;
+  font-size: 0.9em;
+  line-height: 1.4;
+  background: #fff;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+ul {
+  /*display: flex;
+  flex-direction: column;*/
+  display: grid;
+  /*grid-column: auto;*/
+  list-style: none;
+  margin: 0 auto;
+  padding: 1vw;
+}
+
+li {
+  background: #bff;
+  margin: 1vh 1vw;
+  padding: 1vh 1vw;
+  border-radius: 5%
+}
+
+.inner li {
+  background: #fff;
+  border-radius: 5%
+}
+
+/**** Tablet Styles ***********************************/
+@media (min-width: 700px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  li {
+    background: #fcf;
+    width: 44vw
+  }
+
+  li:nth-child(3) {
+    width: 96vw;
+  }
+
+  li:nth-child(4) {
+    width: 96vw;
+  }
+
+  .inner li {
+    width: 45%;
+  }
+  /*ul {
+    display: grid;
+    grid-template-rows: 20% 10% 25% 20%;
+    grid-template-columns: 48% 48%;
+  }
+
+  li {
+    background: #fcf;
+  }
+
+  li:nth-child(3) {
+    grid-row: span 2;
+  }*/
+}
+
+
+
+
+
+
+
+/**** Desktop Styles ***********************************/
+@media (min-width: 1000px) {
+  body {
+    background: #ff9;
+  }
+}

@@ -1,0 +1,68 @@
+/*
+    NAV ELEMENT BACKGROUND : orange
+    NAV ELEMENT HOVER      : red
+
+    BREAKPOINTS
+
+    tablet  : 600px
+    desktop : 900px
+*/
+
+
+/*** Default Mobile Styles ****************************/
+body{
+    text-align: center;
+    font-family: "helvetica", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+nav a {
+  background: orange;
+  border-radius: 7%;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 30px;
+  width: 95vw;
+  height: 10vh;
+  /*margin: 5px auto;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 3px -1px #BBB;
+}
+
+nav a:hover {
+  background: red;
+}
+
+
+/**** Tablet Styles ***********************************/
+@media screen and (min-width: 600px) {
+  nav a{
+    width: 48vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+/**** Desktop Styles ***********************************/
+@media screen and (min-width: 900px) {
+  nav a {
+    width: 23vw;
+  }
+}
