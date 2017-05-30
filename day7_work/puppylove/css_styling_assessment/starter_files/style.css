@@ -1,0 +1,169 @@
+/*
+font info:
+    family - Helvetica, Arial, sans-serif
+    line-height - 1.6
+
+
+colors:
+    light gray - ##eee
+    gray - #dddddd
+    yellow - #ffd24a
+    orange - #ff8523
+    blue - #1fabe5
+    dark blue - #046c97
+*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  background: #84969B;
+  display: flex;
+  justify-content: center;
+  height: 225vh;
+}
+
+header {
+  background: #ff8523;
+  width: 75vw;
+  margin: 4vh auto;
+  margin-bottom: 0;
+  border-top: 2px solid #ffd24a;
+  border-right: 2px solid #ffd24a;
+  border-left: 2px solid #ffd24a;
+}
+
+#logo img{
+  padding: 2vh 2vw;
+}
+
+.main_navigation {
+  margin: 2vh 2vw 0 2vw;
+  padding-bottom: 6vh;
+}
+.main_navigation a{
+  border: 1px solid #fff;
+  border-radius: 10%;
+  color: white;
+  text-decoration: none;
+  padding: 2vh 2vw;
+  font-weight: bold;
+  font-size: 4vh;
+}
+
+#page_content {
+  width: 75vw;
+  margin: 0 auto;
+  background: white;
+  border-right: 2px solid #ffd24a;
+  border-left: 2px solid #ffd24a;
+  border-bottom: 2px solid #ffd24a;
+  padding: 2vh 2vw;
+  box-shadow: 0 3px 2px 2px #666;
+}
+
+section {
+  border-bottom: 4px solid #DDD;
+}
+
+h2 {
+  color: #31ACE5;
+  font-size: 5vh;
+  font-weight: 900;
+  padding: 2vh 0;
+}
+
+h3 {
+  color: #31ADE5;
+  font-size: 3.5vh;
+  font-weight: 900;
+  padding: 2vh 0;
+}
+
+ul {
+  margin: 2vh 2vw;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 5vh 0;
+}
+
+thead {
+  background: #1FABE5;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  padding: 1vh 1vw;
+  border: 1px solid #046c97;
+  vertical-align: middle;
+}
+
+td img {
+  height: 50px;
+  width: 50px;
+}
+
+form {
+  margin: 3vh 2vh;
+  padding: 2vh 2vw;
+  background: #eee;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.name {
+  background: #ff8523;
+  color: white;
+  /*margin: 2vh 2vw;*/
+  padding: 2vh 2vw;
+  border-radius: 10px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.name input {
+  background: white;
+  line-height: 30px;
+}
+
+.city_container {
+  margin: 3vh 0;
+}
+
+.city_container select {
+  background: white;
+  border: 1px solid #ddd;
+}
+
+#bio {
+  margin: 2vh 0;
+  width: 100%;
+  background: white;
+  border: 2px solid #1fabe5;
+}
+
+.submit_container input{
+  line-height: 40px;
+  background: #1fabe5;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 7.5vw;
+  text-align: center;
+}
