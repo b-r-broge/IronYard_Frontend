@@ -36,7 +36,13 @@ nav {
   width: 6vh;
   margin-left: 1vw;
   background: url("../images/bent-creek-logo.png") center/cover no-repeat;
-
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+.logo:hover {
+  background: url("../images/bent-creek-logo-coral.png") center/cover no-repeat;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 .nav-row {
@@ -58,10 +64,14 @@ nav {
   font-family: 'Roboto';
   font-size: 2.5vh;
   text-transform: uppercase;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 .nav-item a:hover {
   color: #CD5D67;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 .cur-page a {
@@ -232,15 +242,19 @@ blockquote {
 
 .main-txt a {
   color: #968772;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 .main-txt a:hover {
   color: #967343;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 .room-img {
   height: 50vh;
-  background: url("../images/background-3.jpg") 0 -15vh/cover no-repeat;
+  background: url("../images/background-3.jpg") 0 -15vh/cover no-repeat fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,14 +301,20 @@ blockquote {
   margin-left: 15vw;
   margin-bottom: 5vh;
   border-collapse: collapse;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 tr:nth-child(even) {
   background: #F2EADC;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 tr:hover {
   background: #CD5D67;
+  -webkit-transition-duration: .5s; /* Safari */
+  transition-duration: .5s;
 }
 
 th, td {
@@ -345,10 +365,14 @@ fieldset {
 
 input ~ div {
   border-bottom: 2px solid #968772;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 input:focus ~ div{
   border-bottom: 2px solid #967343;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 input[type="submit"] {
@@ -361,9 +385,13 @@ input[type="submit"] {
   align-items: center;
   justify-content: center;
   text-align: center;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
 
 input[type="submit"]:hover {
   background: #967343;
   color: #FFFFFF;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 }
