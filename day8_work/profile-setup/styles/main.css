@@ -434,6 +434,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
   font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
 }
 
 body {
@@ -452,19 +453,22 @@ body {
 section {
   max-width: 760px;
   background-color: #ffffff;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   font-weight: lighter;
 }
 
 h1 {
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .profile-form {
+  padding: 1rem 1rem;
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: 1rem 1rem 1rem 2rem 2rem 2rem 2rem 2rem 2rem;
-  grid-gap: .5rem 1rem;
+  grid-gap: 1.5rem 1rem;
 }
 
 input {
@@ -519,7 +523,7 @@ input[type="radio"]:active {
   .profile-form {
     grid-template-columns: 10% 20% 10% 20% 10% 20%;
     grid-template-rows: 1rem 2rem 2rem 2rem 2rem 2rem 2rem;
-    grid-gap: .5rem 1rem;
+    grid-gap: 1.5rem 1rem;
   }
 
   input[type="text"], input[type="email"], input[type="password"], input[type="file"] {
@@ -536,8 +540,45 @@ input[type="radio"]:active {
 /*Apply styling for wider devices*/
 @media (min-width: 1024px) {
   .profile-form {
-    grid-template-columns: repeat(6, 16%);
-    grid-template-rows: 1rem 1rem 2rem 1rem 2rem 2rem;
-    grid-gap: .5rem 1rem;
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 1rem 1rem 2rem 1rem 2rem 1rem 2rem;
+    grid-gap: 1.5rem 1rem;
+  }
+
+  .textl {
+    grid-column: 1 / span 3;
+  }
+
+  .textr {
+    grid-column: 4 / span 3;
+  }
+
+  .text-top {
+    grid-row: 2;
+    align-self: start;
+  }
+
+  .text-bottom {
+    grid-row: 4;
+    align-self: start;
+  }
+
+  #pw_field, input[type="text"], input[type="file"] {
+    grid-column: 1 / span 3;
+  }
+
+  #pw2_field, input[type="email"] {
+    grid-column: 4 / span 3;
+  }
+
+  label[for="profile_pic"] {
+    grid-row: 6;
+    grid-column: 1 / span 3;
+  }
+
+  #signupButton {
+    grid-row: 6 / span 2;
+    grid-column: 4 / span 3;
+    align-self: stretch;
   }
 }
