@@ -1,0 +1,28 @@
+.user-input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scissors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+img {
+  height: 20vh;
+  /*width: 25vw;*/
+}

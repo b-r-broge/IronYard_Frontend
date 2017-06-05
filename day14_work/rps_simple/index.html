@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form class="user-input" action="index.html" method="post">
+      <div class="rock">
+        <h1>rock!</h1>
+        <label for="rock_">
+        <img src="http://gazettereview.com/wp-content/uploads/2016/08/dwayne-the-rock-johnson-net-worth.jpg" title="The Rock" alt="The Rock">
+        </label>
+        <input id="rock_" type="radio" name="rps" value="1">
+      </div>
+      <div class="paper">
+        <h1>paper!</h1>
+        <label for="paper_">
+        <img src="https://s-media-cache-ak0.pinimg.com/564x/d2/80/4e/d2804e68b6c8ac4f3b8b3567d2c8e0e8.jpg" alt="">
+        </label>
+        <input id="paper_" type="radio" name="rps" value="2">
+      </div>
+      <div class="scissors">
+        <h1>scissors!</h1>
+        <label for="scissors_">
+        <img src="https://cdn3.volusion.com/zjnda.vyawe/v/vspfiles/photos/1D6-SS1824BK-SET-2.jpg?1450077650" alt="">
+        </label>
+        <input type="radio" id="scissors_" name="rps" value="3">
+      </div>
+      <input type="button" id="submitButton" name="" value="SELECT" onclick="rockPS();">
+    </form>
+    <!-- <script type="text/javascript" src="main.js"></script> -->
+    <script type="text/javascript">
+    // submitButton.addEventListener('click', function(e) {
+    function rockPS (e) {
+      var user = 1;
+      var radio = document.getElementsByName("rps");
+      for (var i = 1; i < radio.length; i++) {
+        if (radio[i].checked) {
+          user = i+1;
+        }
+      }
+
+      var comp = Math.ceil(Math.random() * 3);
+
+      let uout = "";
+      if (user == 1) {
+        uout = "You selected Rock. ";
+      } else if (user == 2) {
+        uout = "You selected Paper. ";
+      } else if (user == 3) {
+        uout = "You selected Scissors. ";
+      }
+
+      let cout = ""
+      if (comp == 1) {
+        cout = "The computer selected Rock. ";
+      } else if (comp == 2) {
+        cout = "The computer selected Paper. ";
+      } else if (comp == 3) {
+        cout = "The couptuer selected Scissors. ";
+      }
+
+      if ( user == comp ) {
+        alert(uout + cout + "You draw");
+      } else if ( (user > comp) && ((user - comp) < 2) ) {
+        alert(uout + cout + "YOU WIN!");
+      } else if (user == 1 && comp == 3) {
+        alert(uout + cout + "YOU WIN!");
+      } else {
+        alert(uout + cout + "You Lose");
+      }
+    }
+    </script>
+  </body>
+</html>
